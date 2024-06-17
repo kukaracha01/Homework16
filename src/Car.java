@@ -1,7 +1,4 @@
 public class Car extends Transport {
-    private String modelName;
-    private int wheelsCount;
-
     public Car(String modelName) {
         super(modelName, 4);
     }
@@ -16,7 +13,7 @@ public class Car extends Transport {
 
     @Override
     public void service() {
-        updateTyre();
+        super.service();
         checkEngine();
     }
 

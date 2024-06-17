@@ -1,7 +1,4 @@
 public class Truck extends Transport {
-    private String modelName;
-    private int wheelsCount;
-
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
@@ -32,7 +29,7 @@ public class Truck extends Transport {
 
     @Override
     public void service() {
-        updateTyre();
+        super.service();
         checkEngine();
         checkTrailer();
     }
